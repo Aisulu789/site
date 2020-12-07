@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-friendly</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body onload = "load()"> 
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://www.flaticon.com/svg/static/icons/svg/892/892555.svg" alt="up" width="25px"></button> 
+  <div id="basic">
+    <div class="nav">
+      <label for="toggle">&#9776;</label>
+    </div>
+    <input type="checkbox" name="" id="toggle">
+      <header>
+        <ul class="nav_menu">
+            <li><a  id="icon" href="#icon" onclick="window.location.reload()"><img src="https://i.ibb.co/2kr6qdB/icon.png" alt="icon" width="55px"></a></li>
+            <li><a id="txt0" href="index.html#products"   >Products</a></li>
+            <li><a id="txt" href="index.html#blog">Blog</a></li>
+            <li><a id="txt1" href="#contact">Contact</a></li>
+            <li><a id="txt2" href="index.html#about">About</a></li>
+        </ul>
+      </header>
+        <div class="basic_text">
+          <h2 class="h22"> Be Eco-friendly </h2>
+            <h1 class="h11"> We can save the planet  
+              <br> <em class="h12">change your lifestyle</em>  </h1>      
+        </div>
+        <button class="open-button" onclick="openForm()">Login</button>
+  </div> 
+  
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+     
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+    
+    <div id="about">
+      <h2>About our service</h2>
+      <p>We offer to replace all your items and products with more environmentally friendly ones. It all starts small,
+          so you have to start before it's too late. Start with yourself, more and more each time. 
+          Let's save our planet together and pass on clean and environmentally friendly land to our children.
+      </p>
+      <img src="https://i.ibb.co/n3yjm1m/about.png" alt="about">
+
+    </div>
+
+        <div class="gallery"  id="products">
+
+          <div class="gallery_text">
+            <h2>Best products</h2>
+            <p>Towel, wooden toothbrushes, reusable straws, bags, nets, dishes and many other goods</p>
+          </div>
+
+          <div class="images">
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4210315/pexels-photo-4210315.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="b1" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4202926/pexels-photo-4202926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="b2" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4397918/pexels-photo-4397918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="b3" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="b4" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4210336/pexels-photo-4210336.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="b5" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4210373/pexels-photo-4210373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="b6" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4397921/pexels-photo-4397921.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="b7" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/4202919/pexels-photo-4202919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="b8" >
+              <img  class="images_gal"  src="https://images.pexels.com/photos/3850570/pexels-photo-3850570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="b9" >  
+          </div>
+        </div>
+
+        <div class="basic2"  id="blog">
+          <h2>Blog</h2>
+          <p id="basic2_p">In our blog you can see where to start. It's better late than never. You can view each of them separately</p>
+          <div class="cards">
+              <div class="first" style="width:300px">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/4426559/pexels-photo-4426559.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="firstCard" style="width:300px" >
+                  <div class="card-body">
+                    <h4 class="card-title">Plants</h4>
+                    <p class="card-text">Take care about plants</p>
+                    <a href="https://www.wikihow.com/Take-Care-of-Plants" class="btn btn-outline-secondary">Learn more</a>
+                  </div>
+              </div>
+  
+              <div class="second" style="width:300px">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/4397904/pexels-photo-4397904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="firstCard" style="width:300px">
+                  <div class="card-body">
+                    <h4 class="card-title">Garbage</h4>
+                    <p class="card-text">Dispose of garbage sepately</p>
+                    <a href="https://www.hunker.com/12195826/ways-of-disposing-of-garbage" class="btn btn-outline-secondary">Learn more</a>
+                  </div>
+              </div>
+  
+              <div class="third" style="width:300px">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="firstCard" style="width:300px">
+                  <div class="card-body">
+                    <h4 class="card-title">Eco</h4>
+                    <p class="card-text">Buy eco-friendly goods</p>
+                    <a href="https://www.ecofriendlyhabits.com/eco-friendly-products/" class="btn btn-outline-secondary">Learn more</a>
+                  </div>
+              </div>
+
+              <div class="fourth" style="width:300px">
+                <img class="card-img-top" src="https://images.pexels.com/photos/3693351/pexels-photo-3693351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="firstCard" style="width:300px">
+                <div class="card-body">
+                  <h4 class="card-title">Plastic</h4>
+                  <p class="card-text">Refuse from plastic</p>
+                  <a href="https://harmony1.com/4-ways-to-reduce-the-waste-of-plastic-bags/" class="btn btn-outline-secondary">Learn more</a>
+                </div>
+            </div>
+          </div>
+        </div>  
+
+<div class="container" id="contact">
+    <div class="gap-5"></div>
+    <div class="row vertical-gap">
+        <div class="col-lg-5">
+            <h2 class="display-4">Contact Info:</h2>
+            <div class="gap mnt-3"></div>
+
+            <p> Going eco-friendly also improves your quality of life in terms of mortality, age, diseases etc. You might have a better shot at living a quality life with health if you chose to go eco-friendly.</p>
+
+            <div class="contact-info">
+                <h6><strong>Address:</strong> Aktau, Kazakhstan</h6> 
+                <h6><strong>Phone:</strong> +7 705 784 4461</h6> 
+                <h6><strong>Email:</strong> ecofriendly@example.com</h6>  
+                <h6><strong>Instagram:</strong> @eco_friendly</h6> 
+            </div>
+            
+        </div>
+        <div class="col-lg-7">
+            <form action="#" class="form form-ajax">
+                 <div class="row vertical-gap">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control required" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control required" name="email" placeholder="Your Email">
+                    </div>
+                 </div>
+
+                <div class="gap-1"></div>
+                <input type="text" class="form-control required" placeholder="Your Title">
+                <div class="gap-1"></div>
+                <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
+                <div class="gap-1"></div>
+                <div class="form-response-success"></div>
+                <div class="form-response-error"></div>
+                <button onclick="popup()" class="btn btn-outline-secondary">Send Message</button>
+            </form>
+          </div>
+      </div>
+    <div class="gap-5"></div>
+</div>
+
+<hr>
+<div id="map"></div>
+
+<script>
+  function initMap() {
+    var options = {
+      center: { lat: 43.65790932669384, lng: 51.19916370395002},
+      zoom: 12,
+      mapTypeId: "terrain"
+    }
+    
+    var map = new google.maps.Map(document.getElementById("map"), options);
+
+    var icon = {
+      url: "https://www.flaticon.com/svg/static/icons/svg/892/892930.svg",
+      scaledSize: new google.maps.Size(20,20), //scaled size
+      origin: new google.maps.Point(0,0), //origin
+      anchor: new google.maps.Point(0,0) //anchor
+    };
+
+    var marker = new google.maps.Marker({
+      position: { lat:  43.6686316162653, lng: 51.152876660018066},
+      map: map,
+      icon: icon
+    });
+
+    var marker2 = new google.maps.Marker({
+      position: { lat: 43.652973997175785, lng: 51.14121758439514},
+      map: map,
+      icon: icon
+    });
+
+    var marker3 = new google.maps.Marker({
+      position: { lat:  43.6728432220073, lng: 51.159233913231766},
+      map: map,
+      icon: icon
+    });
+
+    var marker4 = new google.maps.Marker({
+      position: { lat:  43.67408449821361, lng: 51.17773288254458},
+      map: map,
+      icon: icon
+    });
+
+ var infowindow = new google.maps.InfoWindow({
+    content:"Our store here"
+});
+
+    google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+});
+
+    google.maps.event.addListener(marker2, 'click', function() {
+    infowindow.open(map,marker2);
+});
+
+    google.maps.event.addListener(marker3, 'click', function() {
+    infowindow.open(map,marker3);
+});
+
+    google.maps.event.addListener(marker4, 'click', function() {
+    infowindow.open(map,marker4);
+});
+
+const flightPlanCoordinates = [
+          { lat:  43.6686316162653, lng: 51.152876660018066},
+          { lat: 43.652973997175785, lng: 51.14121758439514},
+          { lat:  43.6728432220073, lng: 51.159233913231766},
+          { lat:  43.67408449821361, lng: 51.17773288254458},
+        ];
+        const flightPath = new google.maps.Polyline({
+          path: flightPlanCoordinates,
+          geodesic: true,
+          strokeColor: "green",
+          strokeOpacity: 1.0,
+          strokeWeight: 2,
+        });
+        flightPath.setMap(map);
+  }
+</script>
+
+      <div class="footer_cont">
+              <div class="footer_social">
+                  <ul class="foot">
+                      <li><a href="https://vk.com/id506159611"><img src="https://www.flaticon.com/svg/static/icons/svg/25/25684.svg" alt="vk" width="20px"></a></li>
+                      <li><a href="https://www.instagram.com/_aisulu_m/?hl=ru"><img src="https://www.flaticon.com/svg/static/icons/svg/1077/1077093.svg" alt="inst" width="20px"></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100008567016621"><img src="https://www.flaticon.com/svg/static/icons/svg/1051/1051309.svg" alt="facebook" width="20px"></a></li>
+                      <li><a  id="map_link" href="#!"><img src="https://www.flaticon.com/svg/static/icons/svg/447/447031.svg" alt="mapp" width="20px"></a></li>
+                  </ul>
+              </div>
+              <div class="footer_text">
+                  <p>2020 © Created by Aisulu. Web programming</p>
+              </div>
+      </div>
+
+      <script>
+
+        $("#map_link").click(function(){
+          $("#map").toggle();
+        });
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
+<script> 
+  $(document).ready(function(){
+    $("#txt").click(function(){
+      $("#blog").slideDown("slow");
+    });
+  });
+  </script>
+  
+</body>
+</html>
